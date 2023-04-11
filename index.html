@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食報報</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bg container-fluid">
+            <nav class="navbar navbar-expand-sm container">
+                <a href="#top" class="header_title fw">美食報報</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#link-box">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse ms-5 justify-content-end" id="link-box">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#eat" class="nav-link link">小吃推薦</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#gave" class="nav-link link">特色伴手禮</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="carousel slide header_bg" id="header_carousel" data-bs-ride="carousel">
+            <div class="carousel-inner header_carousel">
+                <div class="carousel-item active">
+                    <img src="./images/鹹酥雞.png" class="header_image d-block w-100">
+                    <div class="box container">
+                        <div class="headr_box">
+                            <h1 class="eat-title">鹹酥雞</h1>
+                            <h3 class="ms-5 fs-1">肉質多汁 美味口感</h3>
+                            <a href="#eat" class="d-flex justify-content-end">
+                                <div class="btn fs-4">了解更多</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/珍奶.png" class="header_image d-block w-100">
+                    <div class="box container">
+                        <div class="headr_box">
+                            <h1 class="eat-title">珍珠奶茶</h1>
+                            <h3 class="ms-5 fs-1">茶香四溢 Q彈珍珠</h3>
+                            <a href="#drink" class="d-flex justify-content-end">
+                                <div class="btn fs-4">了解更多</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/地瓜球.jpg" class="header_image d-block w-100">
+                    <div class="box container">
+                        <div class="headr_box">
+                            <h1 class="eat-title">地瓜球</h1>
+                            <h3 class="ms-5 fs-1">酥酥脆脆 甜而不膩</h3>
+                            <a href="#eat" class="d-flex justify-content-end">
+                                <div class="btn fs-4">了解更多</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/牛肉麵.png" class="header_image d-block w-100">
+                    <div class="box container">
+                        <div class="headr_box">
+                            <h1 class="eat-title">牛肉麵</h1>
+                            <h3 class="ms-5 fs-1">湯頭香濃 牛肉軟嫩</h3>
+                            <a href="#eat" class="d-flex justify-content-end">
+                                <div class="btn fs-4">了解更多</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/臭豆腐.png" class="header_image d-block w-100">
+                    <div class="box container">
+                        <div class="headr_box">
+                            <h1 class="eat-title">臭豆腐</h1>
+                            <h3 class="ms-5 fs-1">外酥內軟 爆汁口感</h3>
+                            <a href="#eat" class="d-flex justify-content-end">
+                                <div class="btn fs-4">了解更多</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header_carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header_carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="eat"></div>
+            <div class="container mt-5 pt-5">
+                <h1 class="title">小吃推薦</h1>
+                <div class="row mt-5 eat_row">
+                    <div class="swiper">
+                        <div class="swiper-wrapper eat_cotnainer">
+                            <div class="swiper-slide">
+                                <div class="eat_box" data-bs-toggle="modal" data-bs-target="#eat1">
+                                    <div class="eatImg_box">
+                                        <div class="eat_text">鹹酥雞</div>
+                                        <img src="./images/鹹酥雞.png" class="eat_img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="eat_box" data-bs-toggle="modal" data-bs-target="#eat2">
+                                    <div class="eatImg_box">
+                                        <div class="eat_text">牛肉麵</div>
+                                        <img src="./images/牛肉麵.png" class="eat_img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="eat_box" data-bs-toggle="modal" data-bs-target="#eat3">
+                                    <div class="eatImg_box">
+                                        <div class="eat_text">地瓜球</div>
+                                        <img src="./images/地瓜球.jpg" class="eat_img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="eat_box" data-bs-toggle="modal" data-bs-target="#eat4">
+                                    <div class="eatImg_box">
+                                        <div class="eat_text">臭豆腐</div>
+                                        <img src="./images/臭豆腐.png" class="eat_img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="eat_box" data-bs-toggle="modal" data-bs-target="#eat5">
+                                    <div class="eatImg_box">
+                                        <div class="eat_text">刨冰</div>
+                                        <img src="./images/刨冰.jpg" class="eat_img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="eat_box" data-bs-toggle="modal" data-bs-target="#eat6">
+                                    <div class="eatImg_box">
+                                        <div class="eat_text">大腸麵線</div>
+                                        <img src="./images/大腸麵線.jpg" class="eat_img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="eat_box" data-bs-toggle="modal" data-bs-target="#eat7">
+                                    <div class="eatImg_box">
+                                        <div class="eat_text">炸雞排</div>
+                                        <img src="./images/炸雞排.jpg" class="eat_img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="eat_box" data-bs-toggle="modal" data-bs-target="#eat8">
+                                    <div class="eatImg_box">
+                                        <div class="eat_text">滷肉飯</div>
+                                        <img src="./images/滷肉飯.jpg" class="eat_img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="eat_box" data-bs-toggle="modal" data-bs-target="#eat9">
+                                    <div class="eatImg_box">
+                                        <div class="eat_text">珍珠奶茶</div>
+                                        <img src="./images/珍奶.png" class="eat_img">
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="gave"></div>
+            <div class="container mt-5 pt-5">
+                <h1 class="title mb-5">特色伴手禮</h1>
+                <div class="row gave_container">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
